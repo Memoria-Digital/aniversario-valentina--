@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aniversario</title>
+    <link href="https://fonts.googleapis.com/css2?family=Amifer&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./assent/css/styles.css">
+    <link rel="stylesheet" href="./assent/css/musica.css">
+
+    <style>
+        .video-carousel {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+        .video-carousel video {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+        .video-wrapper {
+            position: relative;
+        }
+        .play-button {
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 3em;
+            color: white;
+            background: rgba(0, 0, 0, 0.5);
+            border: none;
+            border-radius: 50%;
+            cursor: pointer;
+            padding: 10px 20px;
+        }
+        .play-button:focus {
+            outline: none;
+        }
+        .carousel-item {
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="letra titulo a">Feliz Aniversario</h1>
+        <p class="date titulo"><b>24/07/2024</b> </p>
+    </header>
+    <main>
+        <div class="container">
+            <div class="container">
+                <button id="playButton">Reproducir/Pausar Canción</button>
+                <audio id="audio" src="./assent/audio/Justin Bieber - Anyone (Sub inglés y español) (Lyrics) __ Jailey.mp3"></audio>
+            </div>
+            <div class="card" style="background-image: url('./assent/img/imagen1.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen2.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen3.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen4.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen5.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen6.jpeg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen7.JPG');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen8.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen9.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen10.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen11.jpg');"></div>
+            <div class="card" style="background-image: url('./assent/img/imagen12.jpg');"></div>
+
+
+           
+        </div>
+        
+        <div class="letter-container mt-5">
+            <h2 class="titulo2">Mi Carta para Ti</h2>
+            <div class="letter-content">
+          
+                <p>¡Feliz Aniversario Amorcito Mío!</p>
+               <p>
+                Nuestro primer añito juntos mi amor, desde que te conocí supe que tendríamos una conexión única y especial. 
+                Nunca olvidaré el momento en que nos vimos en el aeropuerto, con los nervios a mil por no saber lo que podría pasar entre nosotros, donde fue nuestro primer abrazo y donde comenzó todo.</p>
+             <p> En este día tan especial te quiero dar las gracias por ser mi apoyo incondicional, cuidarme, incentivarme a ser mejor cada día y por todo lo que haces por mí y nosotros todos los días.</p>
+            <p>Eres mi niño mimoso, que amo con mi vida y quiero seguir amando hasta el final de nuestras vidas. Siempre me esforzaré en darte lo mejor de mí y en demostrarte mi amor cada día como lo he hecho hasta ahora.</p>
+              <p>Ya verás que muy pronto cumpliremos nuestras metas y sueños, te amo infinito mi niño mimoso, las palabras se hacen pocas para expresar todo lo que siento por ti.</p>
+             <p>Me haces muy feliz y cada día te amo más y más, siempre seré tu apoyo y quién te saque una sonrisa en los días grises.</p>
+            <p>Por muchos años más juntos, para mi Daryel de su niña mimosa <3</p>
+            
+            </div>
+
+        </div>
+
+         <!-- Carrusel de videos -->
+         <div class="container mt-5 video-carousel">
+            <h2 class="titulo2 text-center">Mejores Momentos</h2>
+            <div id="videoCarousel" class="carousel slide" data-ride="carousel">
+                <div class="carousel-inner">
+                    <div class="carousel-item active">
+                        <div class="video-wrapper">
+                            <video id="video1" width="600" height="400" controls>
+                                <source src="./assent/videos/video1.MOV" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video1')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video2" width="600" height="400" controls>
+                                <source src="./assent/videos/video2.mp4" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video2')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item a ">
+                        <div class="video-wrapper">
+                            <video id="video3" width="600" height="400" controls>
+                                <source src="./assent/videos/video3.mov" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video3')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video4" width="600" height="400" controls>
+                                <source src="./assent/videos/video4.MOV" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video4')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video5" width="600" height="400" controls>
+                                <source src="./assent/videos/video5.mov" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video5')">&#9658;</button>
+                        </div>
+                    </div>
+                    <div class="carousel-item">
+                        <div class="video-wrapper">
+                            <video id="video6" width="600" height="400" controls>
+                                <source src="./assent/videos/video6.mov" type="video/mp4">
+                                Tu navegador no soporta el elemento de video.
+                            </video>
+                            <button class="play-button" onclick="playPause('video6')">&#9658;</button>
+                        </div>
+                    </div>
+                    
+                </div>
+                <a class="carousel-control-prev" href="#videoCarousel" role="button" data-slide="prev">
+                    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Anterior</span>
+                </a>
+                <a class="carousel-control-next" href="#videoCarousel" role="button" data-slide="next">
+                    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span class="sr-only">Siguiente</span>
+                </a>
+            </div>
+        </div>
+       
+        
+    </main>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="./assent/js/script.js"></script>
+    <script src="./assent/js/musica.js"></script>
+    <script>
+        function playPause(videoId) {
+            var video = document.getElementById(videoId);
+            var button = video.nextElementSibling;
+            if (video.paused) {
+                video.play();
+                button.style.display = 'none';
+            } else {
+                video.pause();
+                button.style.display = 'block';
+            }
+
+            video.onended = function() {
+                button.style.display = 'block';
+            };
+        }
+    </script>
+</body>
+</html>
